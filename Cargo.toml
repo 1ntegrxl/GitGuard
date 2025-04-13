@@ -1,7 +1,18 @@
 [package]
 name = "gitguard"
-version = "0.1.0"
+version = "1.0.0"
+authors = ["1ntegrxl"]
 edition = "2021"
+description = "An OPSEC-oriented tool to scan and fix Git username and email leaks"
+license = "MIT"
+repository = "https://github.com/1ntegrxl/gitguard"
+keywords = ["opsec", "osint", "git", "redteam"]
+categories = ["command-line-utilities", "security"]
+readme = "README.md"
+
+[[bin]]
+name = "gitguard"
+path = "src/main.rs"
 
 [dependencies]
 clap = "4.0.0" 
