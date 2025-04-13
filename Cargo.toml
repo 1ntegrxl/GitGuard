@@ -1,0 +1,12 @@
+[package]
+name = "gitguard"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.0.0" 
+tokio = { version = "1", features = ["full"] }
+prettytable = "0.10.0"
+termcolor = "1.1"
+crossterm = "0.28.1"
+tempfile = "3.5"
