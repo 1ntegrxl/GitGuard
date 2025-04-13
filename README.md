@@ -41,10 +41,10 @@ Manual:
 $ pip install git-filter-repo
 ```
 
-One-line install using cargo : 
+### One-line install using cargo : 
 
 ```bash
-$ cargo install --git https://github.com/yourusername/gitguard
+$ cargo install --git https://github.com/1ntegrxl/gitguard
 ```
 
 ## Usage
