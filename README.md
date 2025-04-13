@@ -1,6 +1,6 @@
-# gitguard 🛡️
+# GitGuard 🛡️
 
-> "You run gitrecon and you want to fix your terrible OPSEC? Don't worry, GitGuard is here for you."
+> "You ran gitrecon and you want to fix your terrible OPSEC? Don't worry, GitGuard is here for you."
 
 ## Overview
 
