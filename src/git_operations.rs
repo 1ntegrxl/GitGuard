@@ -6,8 +6,6 @@ use std::path::Path;
 use std::fs;
 use std::process::Stdio;
 
-
-
 pub async fn scan_repositories(git_projects_path: &str, username: &str, usual_commit_email: &str) -> Vec<(String, String, String, String)> {
     let mut leaks = Vec::new();
     let path = tokio_fs::canonicalize(git_projects_path)

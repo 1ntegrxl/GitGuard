@@ -49,9 +49,10 @@ cargo run --release -- \
   --usual-commit-email "your-safe-email@users.noreply.github.com" \
   --git-projects-path "/path/to/git/folder" \
   --private-key "~/.ssh/id_rsa" \
-  --show-leaks \
-  --fix-leaks
+  --show-leaks/--fix-leaks
+  
 ```
+You can either show your leaks or fix them. Fixing them will also show them before doing so. 
 
 ## Arguments
 
@@ -62,11 +63,11 @@ cargo run --release -- \
 | `--git-projects-path` | Path to folder containing Git repositories             |
 | `--private-key`       | SSH private key to check GitHub access                 |
 | `--show-leaks`        | Only display leaks from previous scans or commits     |
-| `--fix-leaks`         | Actually fix the found leaks (with interactive prompt)|
+| `--fix-leaks`         | Actually fix the found leaks |
 
 ## Workflow
 
-1. Your friend tells you about gitrecon so you go test it and you discover some leaks..
+1. Your friend tells you about gitrecon (https://github.com/atiilla/gitrecon) so you go test it and you discover some leaks..
 
 ```bash
 exegol-HTB Scan # gitrecon -u 1ntegrxl -n 

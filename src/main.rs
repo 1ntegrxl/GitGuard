@@ -72,7 +72,7 @@ async fn main() {
             "[-] Make sure you provide your private key to check SSH connection when using --fix-leaks.",
             Color::Red,
         );
-        return; // Stop execution early
+        return; 
     }
 
     let mut stdout = io::stdout();
