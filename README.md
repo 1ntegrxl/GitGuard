@@ -26,25 +26,31 @@ It's nothing much but I hope it will be helpful for a lot of people :D
 Ubuntu/Debian:
 
 ```bash
-sudo apt install git-filter-repo
+$ sudo apt install git-filter-repo
 ```
 
 Arch:
 
 ```bash
-sudo pacman -S git-filter-repo
+$ sudo pacman -S git-filter-repo
 ```
 
 Manual:
 
 ```bash
-pip install git-filter-repo
+$ pip install git-filter-repo
+```
+
+One-line install using cargo : 
+
+```bash
+$ cargo install --git https://github.com/yourusername/gitguard
 ```
 
 ## Usage
 
 ```bash
-cargo run --release -- \
+$ cargo run --release -- \
   --username "your-safe-username" \
   --usual-commit-email "your-safe-email@users.noreply.github.com" \
   --git-projects-path "/path/to/git/folder" \
