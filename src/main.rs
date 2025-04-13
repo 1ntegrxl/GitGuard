@@ -94,11 +94,12 @@ async fn main() {
     } else {
         display_message("🕵️ Found the following potential leaks:\n", Color::Yellow);
         display_table_with_borders(leaks.clone());
-        display_message("You can fix these leaks by running the tool with --fix-leaks", Color::White);
-        
+        if !matches.get_flag("fix-leaks") {
+            display_message("You can fix these leaks by running the tool with --fix-leaks", Color::White);
+        }
         // Fix leaks if the flag is set
         if matches.get_flag("fix-leaks") {
-            display_message("Starting leak fix process...", Color::Blue);
+            display_message("[*] Starting leak fix process...", Color::Blue);
             fix_leaks(
                 &username,
                 &usual_commit_email,
